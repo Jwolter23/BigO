@@ -39,3 +39,41 @@ Good / Excellent: O(log n), O(1)
 
 */
 
+
+// 0(n)
+// IF we have 4 items in array we have 4 operations, 5 is 5 operations, 6 is 6 operations and so on
+// Crates a linear line as inputs increase operations increase
+// Therefore the finding nemo notation is 0(n) --> Linear Time
+
+function findNemo(array) {
+    
+    for (let i = 0; i <array.length; i++){
+        if (array[i] === 'nemo'){
+            console.log('Found NEMO!');
+        }
+    }
+}
+
+findNemo(large)
+
+// O(1)
+
+//Ex:
+
+function compressFirstBox(boxes){
+    console.log(boxes[0])
+}
+
+// 0(1) --> Constant Time
+// No matter how many boxes are in the array it'll always grab the the first one
+// Only one operation to do so its constant
+// On a graph looks like a straight horizontal line
+
+const boxes = [0,1,2,3,4,5];
+
+function logFirstTwoBoxes(boxes) {
+    console.log(boxes[0]);  // 0(1)
+    console.log(boxes[1]);  // 0(1)
+}
+
+logFirstTwoBoxes(boxes) // total = 0(2) still a constant time 

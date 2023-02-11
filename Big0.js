@@ -123,4 +123,7 @@ findNemo(everyone)
 We can make our function more efficient
     the code is going to run 10 times even though nemo is in the 4th spot in the array
     by adding a break; it will stop once nemo is found
+
+When it comes to Big O however Big O only cares about the worst case scenerio
+    So the worst case here is nemo in the 10th spot
 */

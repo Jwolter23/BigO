@@ -77,3 +77,50 @@ function logFirstTwoBoxes(boxes) {
 }
 
 logFirstTwoBoxes(boxes) // total = 0(2) still a constant time 
+
+// Big 0 challenge
+
+function funChallenge(input) {
+    let a = 10; // 0(1)
+    a = 50 + 3; // Reassigning a 0(1)
+
+    for (let i = 0; i <input.length; i++) { // 0(n)
+        anotherFunction(); // O(n)
+        let stranger = true; // O(n)
+        a++; // 0(n)
+    }
+    return a; // O(1)
+}
+// 3 O(1) 4 O(n) --> simplified to O(n)
+// Big O(n)
+
+funChallenge()
+
+// RULE BOOK
+
+/*
+1. Worst Case
+
+2. Remove Constants
+
+*/
+
+// Worst Case
+
+function findNemo(array) {
+    
+    for (let i = 0; i <array.length; i++){
+        if (array[i] === 'nemo'){
+            console.log('Found NEMO!');
+            break;
+        }
+    }
+}
+
+findNemo(everyone)
+
+/*
+We can make our function more efficient
+    the code is going to run 10 times even though nemo is in the 4th spot in the array
+    by adding a break; it will stop once nemo is found
+*/

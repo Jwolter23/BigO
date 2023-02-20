@@ -84,11 +84,11 @@ function funChallenge(input) {
     let a = 10; // 0(1)
     a = 50 + 3; // Reassigning a 0(1)
 
-    for (let i = 0; i <input.length; i++) { // 0(n)
-        anotherFunction(); // O(n)
-        let stranger = true; // O(n)
-        a++; // 0(n)
-    }
+    // for (let i = 0; i <input.length; i++) { // 0(n)
+    //     anotherFunction(); // O(n)
+    //     let stranger = true; // O(n)
+    //     a++; // 0(n)
+    // }
     return a; // O(1)
 }
 // 3 O(1) 4 O(n) --> simplified to O(n)
@@ -142,3 +142,30 @@ When it comes to Big O however Big O only cares about the worst case scenerio
 
 // RUL2 3
 // Different terms for inputs
+
+function compressBoxesTwice(boxes, boxes2){
+    boxes.forEach(function(boxes) {
+        console.log(boxes)
+    })
+
+    boxes2.forEach(function(boxes) {
+        console.log(boxes)
+    })
+}
+
+
+// Log all pairs of array
+    let box = ["a","b","c","d","e"];
+
+    function logAllPairsOfArray(array){
+        for (let i = 0; i <array.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                console.log(array[i], array[j])
+            }
+        }
+    }
+
+logAllPairsOfArray(box)
+
+// What is the BigO of this?
+// Nested Loops we use multiplication so it becomes O(n * n) -> O(n^2) = Quadratic time 

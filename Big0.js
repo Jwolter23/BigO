@@ -109,6 +109,9 @@ funChallenge()
 
 */
 
+
+// RULE 1
+
 // Worst Case
 
 function findNemo(array) {
@@ -131,3 +134,11 @@ We can make our function more efficient
 When it comes to Big O however Big O only cares about the worst case scenerio
     So the worst case here is nemo in the 10th spot
 */
+
+// RULE 2
+
+// Drop the Constants in Big(O) notation ex: O(2n) -> O(n)
+
+
+// RUL2 3
+// Different terms for inputs

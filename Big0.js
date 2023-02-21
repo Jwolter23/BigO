@@ -268,3 +268,46 @@ date: 2018}]
 //O(n^2) because of nested loops to grab the data
 
 'heuhrkrtkelkklekrle'.length // Space complexitie depends on the language for JS O(1)
+
+array2 = ['nemo', 'dory', 'rando']
+
+const findNemo3 = array => {
+    array.forEach(fish => {
+        if (fish === 'nemo') {
+            console.log('Found HIMMMM!')
+        }
+    })
+}
+
+findNemo3(array2)
+
+// Good example of a for each
+
+
+
+// HOW TO SOLVE INTERVIEW PROBLEMS 
+
+/* 
+    What are companies looking for?
+
+    1. Analytical Skills -> How do you solve and talk through the problem
+    2. Coding Skills
+    3. Technical Skills -> Do you understand the fundamentals
+
+*/
+
+/* 
+Data Structures:
+    Arrays  Tress
+    Stacks  Tries
+    Queues  Graphs
+Linked Lists    Hash Tables
+
+Algorithms:
+    Sorting
+    Dynamic Programming
+    BFS + DFS(Searching)
+    Recursion
+
+*/
+

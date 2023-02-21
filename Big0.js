@@ -248,3 +248,23 @@ function arrayOfHiNTimes(n){
 arrayOfHiNTimes(6)
 
 // Space Complexity O(n) -> Since we created an array that is a data structure and each i of the array adds additional space
+
+
+// EXERCISE
+
+/*
+    Find 1st tweet and Nth tweet (last)
+    
+*/
+const mineArray = [{ 
+    tweet: 'hi',
+    date: 2012
+}, {
+    tweet:'my',
+    date: 2014}, 
+    {tweet:'teddy',
+date: 2018}]
+
+//O(n^2) because of nested loops to grab the data
+
+'heuhrkrtkelkklekrle'.length // Space complexitie depends on the language for JS O(1)

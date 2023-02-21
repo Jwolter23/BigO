@@ -153,6 +153,8 @@ function compressBoxesTwice(boxes, boxes2){
     })
 }
 
+//O(a + b) not nested different arrays
+
 
 // Log all pairs of array
     let box = ["a","b","c","d","e"];
@@ -165,7 +167,31 @@ function compressBoxesTwice(boxes, boxes2){
         }
     }
 
-logAllPairsOfArray(box)
+// logAllPairsOfArray(box)
 
 // What is the BigO of this?
 // Nested Loops we use multiplication so it becomes O(n * n) -> O(n^2) = Quadratic time 
+
+
+//RULE 4
+// Drop Non Dominants
+
+function printAllNumbersThenAllPairSums(numbers) {
+    console.log('these are the numbers:');
+    numbers.forEach(function(number) {
+        console.log(number)
+    })
+
+    console.log('and these are their sums:')
+    numbers.forEach(function(firstNumber) {
+        numbers.forEach(function(secondNumber) {
+            console.log(firstNumber + secondNumber)
+        })
+    })
+}
+printAllNumbersThenAllPairSums([1,2,3,4,5])
+
+//O(n + n^2) drop non dominant terms so -> O(n^2)
+
+
+// O(n!) -> Factorial Time = really bad and rarely encountered

@@ -269,7 +269,7 @@ date: 2018}]
 
 'heuhrkrtkelkklekrle'.length // Space complexitie depends on the language for JS O(1)
 
-array2 = ['nemo', 'dory', 'rando']
+// array2 = ['nemo', 'dory', 'rando']
 
 const findNemo3 = array => {
     array.forEach(fish => {
@@ -279,7 +279,7 @@ const findNemo3 = array => {
     })
 }
 
-findNemo3(array2)
+// findNemo3(array2)
 
 // Good example of a for each
 
@@ -349,6 +349,7 @@ function containsCommonItem(arr1, arr2) {
     }
     return false
 }
+// O(1) - Space complexity 
 // containsCommonItem(array1, array2)
 
 //--STEP 6
@@ -368,11 +369,27 @@ function containsCommonItem2(arr1, arr2) {
             map[item] = true
         }
     }
-    console.log(map)
     // loop through second array and check if item in secon array exists on created object
+    for (let j = 0; j < arr2.length; j++){
+        if(map[arr2[j]]){
+            return true
+        }
+    }
+    return false
 }
 
 containsCommonItem2(array1, array2)
 
 
+// Big O notation is O(a + b) Time Complexity more efficient
+//O(a) - Space complexity
 
+
+function containsCommonItem3(arr1, arr2){
+    return arr1.some(item => arr2.includes(item))
+}
+
+containsCommonItem3(array1, array2)
+
+// this is a simpler way to write the above function more clean and readable achieves the same goal
+// Didnt have to create a JS obj for this one

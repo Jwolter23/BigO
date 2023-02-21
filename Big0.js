@@ -291,8 +291,9 @@ findNemo3(array2)
     What are companies looking for?
 
     1. Analytical Skills -> How do you solve and talk through the problem
-    2. Coding Skills
+    2. Coding Skills -> Do you write clean DRY code
     3. Technical Skills -> Do you understand the fundamentals
+    4. Communication Skills
 
 */
 
@@ -310,4 +311,58 @@ Algorithms:
     Recursion
 
 */
+
+// EXERCISE: INTERVIEW QUESTION
+// Follow the step by step given from cheatsheet instructions.
+
+/* 
+    Give 2 arrays, create a function that let's a user know (true/false) whether these two arrays contain any common items.
+    For Example:
+    const array1 = ['a','b','c','x']
+    const array2 = ['z', 'y', 'i']
+    should return false
+    ---------------
+    const array1 = ['a', 'b', 'c', 'x']
+    const array2 = ['z', 'y', 'x']
+    should return true
+*/
+
+// --STEP 1 - 4
+// 2 parameters - arrays - no size limit
+// return true or false 
+
+// --STEP 5
+// Looks like it may be a nested for loop
+// Compare a to z a to y a to x b to z etc.
+
+
+
+// Code Brute force solution not needed in interview
+
+function containsCommonItem(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++){
+        for (let j = 0; j < arr2.length; j++){
+            if (arr1[i] === arr2[j]){
+                return true;
+            }
+        }
+    }
+    return false
+}
+// containsCommonItem(array1, array2)
+
+//--STEP 6
+// big o is O(a*b) because array are different sizes technically not O(n^2) but it is
+
+// const array1 = ['a', 'b', 'c', 'x']
+// const array2 = ['z', 'y', 'x']
+
+
+// --STEP 8 
+function containsCommonItem2(arr1, arr2) {
+    // loop through first array and create object where properties === items in the array
+    // loop through second array and check if item in secon array exists on created object
+}
+
+// --STEP 9
 

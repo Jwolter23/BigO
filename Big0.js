@@ -195,3 +195,56 @@ printAllNumbersThenAllPairSums([1,2,3,4,5])
 
 
 // O(n!) -> Factorial Time = really bad and rarely encountered
+// Adds a nested loop for every element
+
+/* WHAT IS GOOD CODE?
+
+1. Readable
+2. Scalable - Speed and Memory
+
+3 Pillars of Code
+
+    Readable
+    Speed (Time Complexity)
+    Memory (Space Complexity)
+
+
+*/
+
+
+// SPACE COMPLEXITY
+
+/* 
+What causes space complexities?
+
+1. variables
+2. data structures
+3. Function calls
+4. Allocations
+
+*/
+
+function boooo(n) {
+    for (let i = 0; i < n.length; i++){
+        console.log('booo!!')
+    }
+}
+
+boooo([1,2,3,4,5])
+
+/* 
+Time Complexity O(n)
+Space Complexity O(1)
+*/
+
+function arrayOfHiNTimes(n){
+    let hiArray = []
+    for (let i = 0; i < n; i++){
+        hiArray[i] = 'hi'
+    }
+    return hiArray
+}
+
+arrayOfHiNTimes(6)
+
+// Space Complexity O(n) -> Since we created an array that is a data structure and each i of the array adds additional space

@@ -354,15 +354,25 @@ function containsCommonItem(arr1, arr2) {
 //--STEP 6
 // big o is O(a*b) because array are different sizes technically not O(n^2) but it is
 
-// const array1 = ['a', 'b', 'c', 'x']
-// const array2 = ['z', 'y', 'x']
+const array1 = ['a', 'b', 'c', 'x']
+const array2 = ['z', 'y', 'x']
 
 
-// --STEP 8 
+// --STEP 8 - 9
 function containsCommonItem2(arr1, arr2) {
     // loop through first array and create object where properties === items in the array
+    let map ={};
+    for (let i = 0; i < arr1.length; i++){
+        if(!map[array1[i]]){
+            const item = arr1[i]
+            map[item] = true
+        }
+    }
+    console.log(map)
     // loop through second array and check if item in secon array exists on created object
 }
 
-// --STEP 9
+containsCommonItem2(array1, array2)
+
+
 

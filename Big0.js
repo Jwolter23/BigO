@@ -393,3 +393,8 @@ containsCommonItem3(array1, array2)
 
 // this is a simpler way to write the above function more clean and readable achieves the same goal
 // Didnt have to create a JS obj for this one
+
+
+//INTRO INTO DATASTRUCTURES
+
+//Data structures are a way for us to organize specific types of data

@@ -398,3 +398,13 @@ containsCommonItem3(array1, array2)
 //INTRO INTO DATASTRUCTURES
 
 //Data structures are a way for us to organize specific types of data
+
+//How Do Computers Store Data?
+
+/*
+Random Acess Memory - RAM -> Lose memory when computer turns off
+
+Storage - Disk Drive, Flash, SSD -> Permanent / Persistance -> Slow
+
+CPU -> Does all the work
+*/
